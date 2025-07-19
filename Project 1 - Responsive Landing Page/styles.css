@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 200vh;
+    background: rgb(199, 161, 234);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgb(200, 121, 236);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+nav.scrolled {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+.logo {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(218, 22, 22);
+    letter-spacing: 2px;
+}
+nav ul.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav ul.nav-links li a {
+    color: white;
+    font: 16px Arial, sans-serif;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 3px;
+    transition: color 0.2s, background 0.2s;
+}
+nav ul.nav-links li a:hover,
+nav ul.nav-links li a:focus {
+    color: rgb(23, 24, 21);
+    background: rgb(174, 196, 132);
+    text-decoration: underline;
+    outline: none;
+}
+nav.scrolled ul.nav-links li a {
+    color: rgb(80, 32, 155);
+}
+nav.scrolled ul.nav-links li a:hover,
+nav.scrolled ul.nav-links li a:focus {
+    color: #fff;
+    background: rgb(200, 121, 236);
+    text-decoration: underline;
+}
+.content {
+    font-family: Arial, sans-serif;
+    color: #be0000;
+    background: rgb(240, 189, 234);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px 100px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.content h1 {
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    color: inherit;
+}
+.content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5c1c1c;
+    font-size: 1rem;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

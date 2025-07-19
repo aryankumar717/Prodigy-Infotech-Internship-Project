@@ -1,97 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            min-height: 200vh;
-            background: rgb(199, 161, 234);
-            margin: 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: rgb(200, 121, 236);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
-
-        nav a {
-            color: white;
-            font: 16px Arial, sans-serif;
-            text-decoration: none;
-        }
-
-        nav ul a:hover {
-            color: rgb(23, 24, 21);
-            text-decoration: underline;
-        }
-
-        .logo {
-            font-size: large;
-            font-weight: bold;
-            color: rgb(218, 22, 22);
-        }
-
-        nav a:hover {
-            color: rgb(174, 196, 132);
-            text-decoration: underline;
-        }
-
-        .content {
-            font-family: Arial, sans-serif;
-            color: #be0000;
-            background: rgb(240, 189, 234);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 40px 100px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .content h1 {
-            font-size: 2rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-bottom: 15px;
-            color: inherit;
-        }
-
-        .content p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #5c1c1c;
-            font-size: 1rem;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <nav id="mainNav">
         <a href="#" class="logo">MyLogo</a>
@@ -105,14 +19,14 @@
     </nav>
     <div class="content">
         <h1>Welcome to My Website</h1>
-        <p>This is a simple responsive navigation bar example. This is a simple responsive navigation bar example.This
-            is a simple responsive navigation bar example.This is a simple responsive navigation bar example.This is a
-            simple responsive navigation bar example.</p>
+        <p>
+            This is a simple responsive navigation bar example. Scroll down to see the navigation bar change its style.
+            Hover over the navigation links to see the hover effect.
+        </p>
     </div>
-
     <footer>
         <p>© 2025 Aryan Kumar. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
